@@ -1,0 +1,32 @@
+{
+  "name": "desenvolve_desafio-cli_cep_codenova",
+  "version": "1.0.0",
+  "description": "Ferramenta de linha de comando (CLI) usando Node.js para consultar endereço via CEP com API ViaCEP.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sowza82/desenvolve_desafio-cli_cep_codenova.git"
+  },
+  "keywords": [
+    "cli",
+    "cep",
+    "nodejs",
+    "viacep",
+    "desenvolve"
+  ],
+  "author": "Tatiane Souza (Sowzatech)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sowza82/desenvolve_desafio-cli_cep_codenova/issues"
+  },
+  "homepage": "https://github.com/Sowza82/desenvolve_desafio-cli_cep_codenova#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "node-fetch": "^2.7.0",
+    "ora": "^6.3.1"
+  }
+}
