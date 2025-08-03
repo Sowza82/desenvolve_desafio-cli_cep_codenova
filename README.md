@@ -1,55 +1,50 @@
-# CLI de Consulta de CEP - Projeto CodeNova
+
+---
+
+# 🧾 CLI de Consulta de CEP 
 
 ## 💡 Objetivo
 
-Construir uma ferramenta simples de linha de comando (CLI) usando Node.js que consulta informações de endereço a partir de um CEP, consumindo a API pública [ViaCEP](https://viacep.com.br).
+Construir uma ferramenta simples de linha de comando (CLI) usando Node.js para consultar informações de endereço a partir de um CEP, consumindo a API pública [ViaCEP](https://viacep.com.br).
 
 ---
 
 ## ⚙️ Funcionalidades
 
-- Receber o CEP como argumento no terminal.
-- Validar o formato do CEP.
-- Buscar os dados de endereço na API ViaCEP.
-- Exibir o endereço completo no terminal.
-- Oferecer opção de nova consulta.
-- Encerrar o programa de forma clara.
+- Entrada de CEP via terminal (com ou sem traços/pontos)
+- Validação automática do formato do CEP
+- Busca de endereço via API do ViaCEP
+- Exibição formatada dos dados no terminal
+- Histórico de buscas salvos localmente
+- Menu interativo com opção de repetir consulta ou sair
 
 ---
 
 ## 🚧 Etapas do Projeto
 
-1. Inicializar um projeto Node.js com:
+1. Inicializar o projeto Node.js:
    ```bash
    npm init -y
 
----
-
-## 🚧 Etapas do Projeto
-
-1. Inicializar um projeto Node.js com:
-   ```bash
-   npm init -y
-
-2. Criar o arquivo principal do programa (ex: index.js).
+2. Criar o arquivo principal (index.js)
 
 
-3. Utilizar fetch com async/await para consumir a API.
+3. Usar node-fetch com async/await para consumir a API
 
 
-4. Validar a entrada do usuário com expressões regulares.
+4. Validar entrada do usuário com expressões regulares
 
 
-5. Tratar erros, como CEP inválido ou inexistente.
+5. Tratar erros como CEP inválido ou inexistente
 
 
-6. Formatar e exibir o resultado no terminal com console.log.
+6. Exibir dados formatados com console.log, chalk e console.table
 
 
-7. Permitir que o usuário decida se quer fazer outra busca.
+7. Permitir múltiplas consultas com menu interativo
 
 
-8. [Opcional] Publicar a ferramenta no NPM para uso global.
+8. [Opcional] Publicar a ferramenta no NPM para uso global
 
 
 
@@ -64,47 +59,35 @@ JavaScript ES6+
 
 fetch + async/await
 
-Validação de strings
+Regex para validação
 
-Manipulação de objetos
+Promises e manipulação de erros
 
-Estruturas de controle (if/else)
+Leitura e escrita com fs
 
-Operações com Promise
+Terminal interativo com readline
 
-Execução no terminal
+Uso de bibliotecas externas: chalk, ora, node-fetch
 
 
 
 ---
 
-🧠 Como Usar
+🚀 Como Usar
 
-No terminal:
+1. Clonar o projeto
 
-node index.js 01001000
+git clone https://github.com/Sowza82/desenvolve_desafio-cli_cep_codenova.git
+cd desenvolve_desafio-cli_cep_codenova
+npm install
 
-Ou siga o menu interativo quando o programa iniciar sem argumento:
+2. Rodar o CLI
 
 node index.js
 
+3. Ou passar o CEP diretamente (em versões futuras)
 
----
-
-👥 Equipe CodeNova
-
-Ana Júlia
-
-Lauane
-
-Leandra
-
-Lucivaldo
-
-Mariana
-
-Tatiane
-
+node index.js 01001000
 
 
 ---
